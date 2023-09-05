@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: xiangqi1 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\1\AppData\Local\Temp\RSP2B84.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/xiangqi1.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\GTD\TDL\本科生_教学\2023暑期学校\提供辅助程序\中国象棋\Thinker.cpp"
+]
+Creating command line "cl.exe @C:\Users\1\AppData\Local\Temp\RSP2B84.tmp" 
+Creating temporary file "C:\Users\1\AppData\Local\Temp\RSP2B85.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/xiangqi1.pdb" /debug /machine:I386 /out:"Debug/xiangqi1.exe" /pdbtype:sept 
+".\Debug\BaseClasses.obj"
+".\Debug\BaseDef.obj"
+".\Debug\JiangJunDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\StepList.obj"
+".\Debug\Thinker.obj"
+".\Debug\xiangqi1.obj"
+".\Debug\xiangqi1Dlg.obj"
+".\Debug\xiangqi1.res"
+]
+Creating command line "link.exe @C:\Users\1\AppData\Local\Temp\RSP2B85.tmp"
+<h3>Output Window</h3>
+Compiling...
+Thinker.cpp
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/xiangqi1.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\BaseClasses.sbr" ".\Debug\BaseDef.sbr" ".\Debug\JiangJunDlg.sbr" ".\Debug\StepList.sbr" ".\Debug\Thinker.sbr" ".\Debug\xiangqi1.sbr" ".\Debug\xiangqi1Dlg.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+xiangqi1.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

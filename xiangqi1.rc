@@ -1,0 +1,278 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\xiangqi1.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_R_S                 ICON    DISCARDABLE     "res\\RED_S.ico"
+IDI_R_X                 ICON    DISCARDABLE     "res\\RED_X.ico"
+IDI_B_B                 ICON    DISCARDABLE     "res\\BLACK_B.ico"
+IDI_B_J                 ICON    DISCARDABLE     "res\\BLACK_J.ico"
+IDI_B_K                 ICON    DISCARDABLE     "res\\BLACK_K.ico"
+IDI_B_M                 ICON    DISCARDABLE     "res\\BLACK_M.ico"
+IDI_B_P                 ICON    DISCARDABLE     "res\\BLACK_P.ico"
+IDI_B_S                 ICON    DISCARDABLE     "res\\BLACK_S.ico"
+IDI_B_X                 ICON    DISCARDABLE     "res\\BLACK_X.ico"
+IDI_MAINFRAME           ICON    DISCARDABLE     "res\\Chess.ico"
+IDI_R_B                 ICON    DISCARDABLE     "res\\RED_B.ico"
+IDI_R_J                 ICON    DISCARDABLE     "res\\RED_J.ico"
+IDI_R_K                 ICON    DISCARDABLE     "res\\RED_K.ico"
+IDI_R_M                 ICON    DISCARDABLE     "res\\RED_M.ico"
+IDI_R_P                 ICON    DISCARDABLE     "res\\RED_P.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\Zip File.ico"
+IDI_ICON2               ICON    DISCARDABLE     "res\\News.ico"
+IDI_ICON3               ICON    DISCARDABLE     "res\\User.ico"
+IDI_ICON4               ICON    DISCARDABLE     "res\\gamenew.ico"
+IDI_ICON5               ICON    DISCARDABLE     "res\\ico00001.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 173, 142
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 xiangqi1"
+FONT 16, "华文彩云", 0, 0, 0x1
+BEGIN
+    ICON            IDI_MAINFRAME,IDC_STATIC,70,25,21,21
+    LTEXT           "xiangqi1 1.0 版",IDC_STATIC,53,82,63,12,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2011",IDC_STATIC,53,100,63,20
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,52,54,69,24,
+                    WS_EX_ACCEPTFILES | WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE | 
+                    WS_EX_RIGHT | WS_EX_RTLREADING | WS_EX_STATICEDGE
+    PUSHBUTTON      "象棋",IDOK,141,29,25,14
+END
+
+IDD_XIANGQI1_DIALOG DIALOGEX 0, 0, 167, 154
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "xiangqi1"
+MENU IDR_MENU1
+FONT 16, "华文新魏"
+BEGIN
+    PUSHBUTTON      "悔棋",IDC_XIANGQI1_UNDO,115,54,45,12
+    PUSHBUTTON      "还原",IDC_XIANGQI1_REDO,115,70,45,12
+    PUSHBUTTON      "电脑",IDC_XIANGQI1_HELP,115,86,45,12
+    LISTBOX         IDC_LIST1,115,7,45,45,LBS_NOINTEGRALHEIGHT | 
+                    LBS_DISABLENOSCROLL | WS_VSCROLL
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,115,118,45,12
+    PUSHBUTTON      "求和",IDC_XIANGQI1_PEACE,115,102,45,12
+    PUSHBUTTON      "将军",IDC_JiangJun,115,133,45,12
+END
+
+IDD_JIANGJUN DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,130,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,130,24,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "xiangqi1 Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "xiangqi1\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2011\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "xiangqi1.EXE\0"
+            VALUE "ProductName", "xiangqi1 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 166
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_XIANGQI1_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_JIANGJUN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "选项(&O)"
+    BEGIN
+        MENUITEM "新棋局(&N)",                  IDM_NEW
+        MENUITEM "退出(&E)",                    IDOK
+    END
+    POPUP "走棋(&W)"
+    BEGIN
+        MENUITEM "悔棋(&U)",                    IDC_XIANGQI1_UNDO
+        MENUITEM "还原(&R)",                    IDC_XIANGQI1_REDO
+        MENUITEM "电脑(&T)",                    IDC_XIANGQI1_HELP
+        MENUITEM "求和(&P)",                    IDC_XIANGQI1_PEACE
+    END
+    POPUP "帮助(&A)"
+    BEGIN
+        MENUITEM "关于象棋(&Q)",                IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 xiangqi1(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\xiangqi1.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
